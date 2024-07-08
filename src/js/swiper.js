@@ -23,7 +23,7 @@ const reviewsSliderDesk = new Swiper('.js-reviews-slider-desk', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 32,
-  slidesPerView: 3.3,
+  slidesPerView: 3.65,
   speed: 800,
   grabCursor: true,
   navigation: {
