@@ -1,0 +1,157 @@
+.coverage-section {
+}
+
+.coverage-bg {
+  padding-top: 51px;
+  padding-bottom: 42px;
+  border-radius: 40px 40px 0px 0px;
+  background-color: #f4f6f9;
+  background-image: url('/images/coverage/map.png'), url('/images/coverage/circles-bg.png');
+  background-size: 343px 230px, 660px 660px;
+  background-position: top 120px left 50%, top -159px left 50%;
+  background-repeat: no-repeat;
+}
+
+.coverage-container {
+}
+
+.coverage-title {
+  color: #2f3037;
+  font-family: Geologica;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.coverage-clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 329px;
+}
+
+.coverage-clients-list-item {
+}
+
+.coverage-client-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 162px;
+  height: 52px;
+  border: 0.91px solid var(--white-color);
+  border-radius: 26px;
+  backdrop-filter: blur(3.64px);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.coverage-client-icon.silpo {
+  width: 66px;
+  height: 28px;
+}
+
+.coverage-client-icon.atb {
+  width: 52px;
+  height: 22px;
+}
+
+.coverage-client-icon.varus {
+  width: 89px;
+  height: 24px;
+}
+
+.coverage-client-icon.delikat {
+  width: 94px;
+  height: 17px;
+}
+
+@media screen and (min-width: 1310px) {
+  .coverage-bg {
+    padding-top: 99px;
+    padding-bottom: 176px;
+    border-radius: 100px 100px 0px 0px;
+    background-image: url('/images/coverage/map.png'), linear-gradient(202.34deg, #f4f6f9 41.69%, rgba(244, 246, 249, 0) 102.144%), linear-gradient(90deg, #f4f6f9 0%, #f4f6f9 100%),
+      url('/images/coverage/circles-bg.png');
+    background-size: 828px 554px, 323px 323px, 679px 519px, 1060px 1060px;
+    background-position: top 75px left calc(50% + 190px), top 336px left calc(50% + 181px), top -24px left calc(50% + 256px), top -290px left calc(50% - 76px);
+    background-repeat: no-repeat;
+  }
+
+  .coverage-title {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .coverage-clients-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 37px;
+    margin-top: 118px;
+  }
+
+  .coverage-clients-list-item.silpo {
+    order: 1;
+  }
+
+  .coverage-clients-list-item.varus {
+    order: 2;
+  }
+
+  .coverage-clients-list-item.atb {
+    order: 3;
+  }
+
+  .coverage-clients-list-item.delikat {
+    order: 4;
+  }
+
+  .coverage-client-wrap {
+    width: 170px;
+    height: 58px;
+    border: 1px solid var(--white-color);
+    border-radius: 29px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .coverage-client-wrap.silpo {
+    margin-left: 16px;
+  }
+
+  .coverage-client-wrap.varus {
+    margin-left: 48px;
+  }
+
+  .coverage-client-wrap.atb {
+    margin-left: 94px;
+  }
+
+  .coverage-client-wrap.delikat {
+    margin-left: 158px;
+  }
+
+  .coverage-client-icon.silpo {
+    width: 73px;
+    height: 31px;
+  }
+
+  .coverage-client-icon.atb {
+    width: 57px;
+    height: 24px;
+  }
+
+  .coverage-client-icon.varus {
+    width: 98px;
+    height: 27px;
+  }
+
+  .coverage-client-icon.delikat {
+    width: 103px;
+    height: 19px;
+  }
+}

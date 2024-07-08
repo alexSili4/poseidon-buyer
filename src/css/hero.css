@@ -5,7 +5,7 @@
   padding-top: 104px;
   padding-bottom: 346px;
   border-radius: 0px 0px 40px 40px;
-  background-image: url('/images/mobile-bg.png'), linear-gradient(236.31deg, rgb(54, 111, 255) -74.707%, rgb(89, 188, 251) 97.82%);
+  background-image: url('/images/hero/mobile-bg.png'), linear-gradient(236.31deg, rgb(54, 111, 255) -74.707%, rgb(89, 188, 251) 97.82%);
   background-size: 492px 492px, 100% 100%;
   background-position: bottom -205px left 50%, 0 0;
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@
     padding-top: 142px;
     padding-bottom: 482px;
     border-radius: 0px 0px 100px 100px;
-    background-image: url('/images/desk-bg.png'), linear-gradient(236.31deg, rgb(54, 111, 255) -44.927%, rgb(89, 188, 251) 164.759%);
+    background-image: url('/images/hero/desk-bg.png'), linear-gradient(236.31deg, rgb(54, 111, 255) -44.927%, rgb(89, 188, 251) 164.759%);
     background-size: 858px 858px, 100% 100%;
     background-position: bottom -423px left 50%, 0 0;
     background-repeat: no-repeat;
