@@ -1,9 +1,9 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const reviewsSliderMobile = new Swiper('.js-reviews-slider-mobile', {
+const reviewsSlider = new Swiper('.js-reviews-slider', {
   modules: [Navigation, Pagination],
   direction: 'horizontal',
   centeredSlides: true,
@@ -12,22 +12,24 @@ const reviewsSliderMobile = new Swiper('.js-reviews-slider-mobile', {
   slidesPerView: 1.095,
   speed: 800,
   grabCursor: true,
+  breakpoints: {
+    1250: {
+      spaceBetween: 32,
+      slidesPerView: 3.65,
+      centeredSlides: false,
+    },
+  },
   navigation: {
     nextEl: '.js-reviews-slider-btn-next',
     prevEl: '.js-reviews-slider-btn-prev',
   },
 });
 
-const reviewsSliderDesk = new Swiper('.js-reviews-slider-desk', {
-  modules: [Navigation, Pagination],
-  direction: 'horizontal',
-  loop: true,
-  spaceBetween: 32,
-  slidesPerView: 3.65,
+const aboutSlider = new Swiper('.js-about-slider', {
+  modules: [Autoplay],
   speed: 800,
-  grabCursor: true,
-  navigation: {
-    nextEl: '.js-reviews-slider-btn-next',
-    prevEl: '.js-reviews-slider-btn-prev',
+  autoplay: {
+    delay: 3000,
+    pauseOnMouseEnter: true,
   },
 });

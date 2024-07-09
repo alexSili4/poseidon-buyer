@@ -1,0 +1,122 @@
+.about-section {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.about-content-wrap {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e3eef9;
+  border-radius: 20px;
+  background-color: var(--white-color);
+}
+
+.about-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  padding-bottom: 20px;
+}
+
+.about-title {
+  color: #2f3037;
+  font-family: Geologica;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.about-slider-pagination {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-slider-pagination-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.about-slider-pagination-item-number {
+  color: #7e8494;
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.about-slider-pagination-item-title {
+  color: #2f3037;
+  font-family: Geologica;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.about-slider-bg {
+  display: flex;
+  justify-content: center;
+  border-radius: 11.63px;
+  background-color: #f4f6f9;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.about-slider-wrap {
+  width: 204px;
+  height: 231px;
+  border: 0.58px solid var(--white-color);
+  border-radius: 5.81px;
+  background-color: rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+
+.about-slider-slide-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1440px) {
+  .about-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .about-content-wrap {
+    flex-direction: row-reverse;
+  }
+
+  .about-text-wrap {
+    gap: 48px;
+    padding: 56px 102px;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-slider-pagination-item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 36px;
+    padding: 16px 8px;
+    padding-left: 0;
+  }
+
+  .about-slider-pagination-item-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .about-slider-pagination-item:first-child {
+    align-items: flex-start;
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+}
