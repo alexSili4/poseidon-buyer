@@ -1,17 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
-
-const getAboutSliderSectionTitle = (sectionIndex) => {
-  const titles = {
-    0: 'Покупець бачить рекламу продукта на сайті торгової мережі',
-    1: 'Вказує номер телефона',
-    2: 'Отримує SMS з купоном',
-    3: 'Відвідує магазин і отримує товар',
-  };
-
-  return titles[sectionIndex];
-};
+import getAboutSliderSectionTitle from './getAboutSliderSectionTitle';
 
 const reviewsSlider = new Swiper('.js-reviews-slider', {
   modules: [Navigation, Pagination],
@@ -23,7 +13,7 @@ const reviewsSlider = new Swiper('.js-reviews-slider', {
   speed: 800,
   grabCursor: true,
   breakpoints: {
-    14400: {
+    1440: {
       spaceBetween: 32,
       slidesPerView: 3.65,
       centeredSlides: false,
