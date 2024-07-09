@@ -147,7 +147,7 @@
   transform: translateX(10px) translateY(-10px);
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1440px) {
   .contacts-section {
     padding-top: 41px;
     padding-bottom: 41px;

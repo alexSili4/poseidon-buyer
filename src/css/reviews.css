@@ -102,7 +102,7 @@
   transform: rotate(180deg);
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1440px) {
   .reviews-section {
     padding-top: 48px;
     padding-bottom: 64px;
