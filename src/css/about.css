@@ -139,19 +139,10 @@
     border-radius: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
-    overflow: hidden;
-  }
-
-  .about-slider-gradient {
-    position: absolute;
-    top: 154px;
-    left: 50%;
-    width: 624px;
-    height: 624px;
-    border-radius: 50%;
-    backdrop-filter: blur(6.78px);
-    background: linear-gradient(-70.99deg, rgba(58, 119, 254, 0.4) 3.113%, rgba(89, 188, 251, 0) 102.266%);
-    transform: translateX(-50%) rotate(29.89deg);
+    background-image: url('/icons/about/bg-gradient.svg');
+    background-size: 623px 623px;
+    background-position: top 154px left 50%;
+    background-repeat: no-repeat;
   }
 
   .about-slider-wrap {
