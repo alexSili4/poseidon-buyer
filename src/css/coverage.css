@@ -1,21 +1,37 @@
 .coverage-section {
+  overflow: hidden;
 }
 
 .coverage-bg {
+  position: relative;
   padding-top: 51px;
   padding-bottom: 42px;
   border-radius: 40px 40px 0px 0px;
   background-color: #f4f6f9;
-  background-image: url('/images/coverage/map.png'), url('/images/coverage/circles-bg.png');
-  background-size: 343px 230px, 660px 660px;
-  background-position: top 120px left 50%, top -159px left 50%;
   background-repeat: no-repeat;
 }
 
-.coverage-container {
+.coverage-circles-bg {
+  position: absolute;
+  top: -159px;
+  left: 50%;
+  width: 660px;
+  height: 660px;
+  transform: translateX(-50%);
+  animation: rotate 60s infinite linear;
+}
+
+.coverage-map-bg {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  width: 343px;
+  height: 230px;
+  transform: translateX(-50%);
 }
 
 .coverage-title {
+  position: relative;
   color: #2f3037;
   font-family: Geologica;
   font-size: 20px;
@@ -68,16 +84,55 @@
   height: 17px;
 }
 
+@media screen and (max-width: 1439px) {
+  .coverage-gradient-top-bg {
+    display: none;
+  }
+
+  .coverage-gradient-bg {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .coverage-bg {
     padding-top: 99px;
     padding-bottom: 176px;
     border-radius: 100px 100px 0px 0px;
-    background-image: url('/images/coverage/map.png'), linear-gradient(202.34deg, #f4f6f9 41.69%, rgba(244, 246, 249, 0) 102.144%), linear-gradient(90deg, #f4f6f9 0%, #f4f6f9 100%),
-      url('/images/coverage/circles-bg.png');
-    background-size: 828px 554px, 323px 323px, 679px 519px, 1060px 1060px;
-    background-position: top 75px left calc(50% + 190px), top 336px left calc(50% + 181px), top -24px left calc(50% + 256px), top -290px left calc(50% - 76px);
-    background-repeat: no-repeat;
+  }
+
+  .coverage-circles-bg {
+    top: -290px;
+    left: calc(50% - 76px);
+    width: 1060px;
+    height: 1060px;
+  }
+
+  .coverage-gradient-top-bg {
+    position: absolute;
+    top: -24px;
+    left: calc(50% + 256px);
+    width: 679px;
+    height: 519px;
+    background-image: linear-gradient(90deg, #f4f6f9 0%, #f4f6f9 100%);
+    transform: translateX(-50%);
+  }
+
+  .coverage-gradient-bg {
+    position: absolute;
+    top: 336px;
+    left: calc(50% + 181px);
+    background-image: linear-gradient(202.34deg, #f4f6f9 41.69%, rgba(244, 246, 249, 0) 102.144%);
+    width: 323px;
+    height: 323px;
+    transform: translateX(-50%);
+  }
+
+  .coverage-map-bg {
+    width: 828px;
+    height: 554px;
+    top: 75px;
+    left: calc(50% + 190px);
   }
 
   .coverage-title {
@@ -153,5 +208,14 @@
   .coverage-client-icon.delikat {
     width: 103px;
     height: 19px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateX(-50%) rotate(0);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
   }
 }

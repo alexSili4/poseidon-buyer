@@ -2,13 +2,22 @@
 }
 
 .hero-bg {
+  position: relative;
   padding-top: 104px;
   padding-bottom: 346px;
   border-radius: 0px 0px 40px 40px;
-  background-image: url('/images/hero/mobile-bg.png'), linear-gradient(236.31deg, rgb(54, 111, 255) -74.707%, rgb(89, 188, 251) 97.82%);
-  background-size: 492px 492px, 100% 100%;
-  background-position: bottom -205px left 50%, 0 0;
+  background-image: linear-gradient(236.31deg, rgb(54, 111, 255) -74.707%, rgb(89, 188, 251) 97.82%);
+  background-size: 100% 100%;
+  background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+.hero-bg-img {
+  position: absolute;
+  bottom: -205px;
+  left: calc(50% - 246px);
+  width: 492px;
+  height: 492px;
 }
 
 .hero-container {
@@ -99,10 +108,21 @@
     padding-top: 142px;
     padding-bottom: 482px;
     border-radius: 0px 0px 100px 100px;
-    background-image: url('/images/hero/desk-bg.png'), linear-gradient(236.31deg, rgb(54, 111, 255) -44.927%, rgb(89, 188, 251) 164.759%);
-    background-size: 858px 858px, 100% 100%;
-    background-position: bottom -423px left 50%, 0 0;
+    background-image: linear-gradient(236.31deg, rgb(54, 111, 255) -44.927%, rgb(89, 188, 251) 164.759%);
+    background-size: 100% 100%;
+    background-position: 0 0;
     background-repeat: no-repeat;
+  }
+
+  .hero-bg-img {
+    bottom: -423px;
+    left: calc(50% - 429px);
+    width: 858px;
+    height: 858px;
+  }
+
+  .hero-bg-img.mobile {
+    display: none;
   }
 
   .hero-title {
@@ -150,6 +170,12 @@
   .hero-decorative-circle-icon.turquoise {
     width: 34px;
     height: 34px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .hero-bg-img.desk {
+    display: none;
   }
 }
 
