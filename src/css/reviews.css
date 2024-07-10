@@ -113,6 +113,7 @@
   }
 
   .reviews-title {
+    align-self: flex-start;
     margin-left: 120px;
     font-size: 32px;
     text-align: left;
