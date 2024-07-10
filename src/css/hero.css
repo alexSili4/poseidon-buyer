@@ -10,6 +10,7 @@
   background-size: 100% 100%;
   background-position: 0 0;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .hero-bg-img {
@@ -17,6 +18,7 @@
   bottom: -205px;
   left: calc(50% - 246px);
   width: 492px;
+  max-width: 492px;
   height: 492px;
 }
 
@@ -118,6 +120,7 @@
     bottom: -423px;
     left: calc(50% - 429px);
     width: 858px;
+    max-width: 858px;
     height: 858px;
   }
 
