@@ -81,6 +81,11 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
+    transition: color var(--transition-duration-and-func);
+  }
+
+  .header-nav-link:is(:hover, :focus) {
+    color: #4289fe;
   }
 
   .header-nav-sign-in-link {

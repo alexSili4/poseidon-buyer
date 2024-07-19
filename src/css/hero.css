@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  animation: moveUpDown 4s infinite;
+  animation: moveUpDown 2s linear infinite;
 }
 
 .hero-decorative-circle.red {
@@ -68,7 +68,7 @@
   width: 81px;
   height: 81px;
   background-color: #2073ca;
-  animation: moveDownUp 4s infinite;
+  animation: moveDownUp 2s linear infinite;
 }
 
 .hero-decorative-circle.turquoise {
